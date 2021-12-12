@@ -9,17 +9,10 @@ font-family: 'Playfair Display', serif;
     padding:0 ;
     box-sizing: border-box;
 }
- .logo {
+ .header__logo {
     width: 200px;
     
 }
-
-.header_list{
-   display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 li{
     display: table-cell;
     margin: 0px 15px;
@@ -46,10 +39,22 @@ a{
 .huesos_dogs{
     align-items: cemter;
     display: flex;
-    background-image: url("../img/accesorios-para-perros-set-productos-mascotas-alimentos-rayar-poste-de-juguetes-peine-tratar-el-estilo-dibujos-animados-vector-192874239.jpg") ;
-   text-align: center;
-   width: 100%;
-   flex-wrap: wrap;
+    background-image: url("../img/accesorios-para-perros-set-productos-mascotas-alimentos-rayar-poste-de-juguetes-peine-tratar-el-estilo-dibujos-animados-vector-192874239.jpg") @mixin gradient-bg($color: null){
+        background-color: $color;
+    
+        @if $enable-gradients {
+          background-image: var(--#{$variable-prefix}gradient);
+        }
+.huesos_dogs-img{
+    width: 100%;
+    height: auto;
+}
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+.col{
+    padding-top:  1rem;
 }
 .parrafo {
  color: black;   
@@ -90,15 +95,8 @@ color: black;
     font-family: 'Playfair Display', serif;
     height: 9vh ;
     font-size: xx-large;
+}
 
-}
-.productos_masV{
-display: flex;
-padding: 20px 40px;
-box-sizing: border-box;
-gap: 10px;
-flex-wrap: wrap;
-}
 .vendido{
     width: 300px;
   border-radius: 30px;
@@ -117,18 +115,6 @@ flex-wrap: wrap;
 .imagen_oferta{
     margin-left: 375px;
 }
-.pie{
-    margin-top: 40px;
-}
 .pie_de_pagina{
   display: flex;
-}
-
-.formulario{
-    color: rgb(252, 0, 13);
-    margin-left: 385px;
-        
-}
-.directorio{
-    text-align: center;
 }
