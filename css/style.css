@@ -1,4 +1,12 @@
 @import url ('https://fonts.googleapis.com/css2? family = Atuendo: wght @ 300; 600; 800 & family = Playfair + Display: ital, wght @ 0,400; 1,500 & display = swap' );
+/*
+paleta de colores logo:
+color: #FF0036; rojo
+color: #00BE00; verde letras
+color: #FF7A00; marron naranja
+color: #A59E9F; gris
+color: #050000; black
+*/
 
 /*
 font-family: 'Outfit', sans-serif;
@@ -13,108 +21,65 @@ font-family: 'Playfair Display', serif;
     width: 200px;
     
 }
-li{
-    display: table-cell;
-    margin: 0px 15px;
+.navbar-light .navbar-nav .nav-link {
+    color: #FF7A00;
+    margin: 0px 20px;
    padding-left: 40px;
    font-family: 'Outfit', sans-serif;
    font-weight: 800;
 }
-
-a{
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
     text-decoration: none;
-    color: rgb(10, 10, 10);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
 }
 .titulo{
-    background-color: rgb(185, 40, 59);
+    background-color:  #FF0036;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: xx-large;
+    min-width: 100%;
+}
+.uno__img-derecha{
+  margin-left: 50px;
+}
+.parrafo{
+    font-family: 'Outfit', sans-serif;
+}
+.parrafo__uno{
+    text-align: justify;
+    font-family: 'Outfit', sans-serif;
 }
 
-.huesos{
-    width: 500px;
-    flex-wrap: wrap;
-}
-.huesos_dogs{
-    align-items: cemter;
-    display: flex;
-    background-image: url("../img/accesorios-para-perros-set-productos-mascotas-alimentos-rayar-poste-de-juguetes-peine-tratar-el-estilo-dibujos-animados-vector-192874239.jpg") @mixin gradient-bg($color: null){
-        background-color: $color;
-    
-        @if $enable-gradients {
-          background-image: var(--#{$variable-prefix}gradient);
-        }
-.huesos_dogs-img{
+.vendidos{
     width: 100%;
-    height: auto;
 }
-.img-fluid {
-    width: 100%;
-    height: auto;
-}
-.col{
-    padding-top:  1rem;
-}
-.parrafo {
- color: black;   
- font-weight: 800;
- 
-}
-.parrafo_uno{
-    line-height: 1.5;
-    font-size: 1.2rem;
-}
-.parrafo_dos{
-    line-height: 1.3;
-    font-size: 1.2rem;
-}
-.background{
-    background-color: rgb(185, 40, 59);
+.sub__titulo{
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    height: 9vh ;
-    font-size: xx-large;
-    
 }
-.text_back{
-    text-align: center;
-    gap: 10px;
+.main__contenedor{
+    background-image: url("../img/accesorios-para-perros-set-productos-mascotas-alimentos-rayar-poste-de-juguetes-peine-tratar-el-estilo-dibujos-animados-vector-192874239.jpg");
+    background-position: top;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.texto{
-color: black;   
- font-weight: 800;
- font-size: large;
- text-align: center;
-}
-
-.productos{
-    background-color: rgb(185, 40, 59);
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    height: 9vh ;
-    font-size: xx-large;
-}
-
-.vendido{
+.main__oferta{
+    margin: auto;
+    margin-top: 20%;
+    background-color: #FF0036;
+    padding: 40px;
     width: 300px;
-  border-radius: 30px;
-  align-items: center;
+    text-align: center;
+    border-radius: 80%;
+}
+.main__titulo{
+    color: white;
+}
+.card-title{
+    background-color:#FF0036;
+    text-align: center;
 }
 
-.ofertas{
-    background-color: rgb(185, 40, 59);
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    height: 9vh ;
-    font-size: xx-large;
-    flex-wrap: wrap;
-  
-}
-.imagen_oferta{
-    margin-left: 375px;
-}
-.pie_de_pagina{
-  display: flex;
-}

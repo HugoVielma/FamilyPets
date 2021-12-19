@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/style.css">
-    <title>Mi practica</title>
+    <title>Tienda de Peces</title>
   </head>
 <body>
    <div class="grid__general">
@@ -40,34 +40,80 @@
  <div class="titulo">
   <h1>Tu tienda Para Peces</h1>
  </div>
-<div class="huesos_dogs">
-  <img src="../img/pcesdownload.jpg" class="img-thumbnail"  alt="peces">  
-    <div class="parrafo">
-        <br><br> 
-          <p class="parrafo_uno">En nuestra tienda encontrarás una gran variedad de comida para perros y otros productos para atender 
-            las necesidades de tu perro: pienso, comida húmeda, snacks, complementos alimenticios, transportines para perros, correas, camas, casetas 
-            y demás accesorios para perros ¡a los mejores precios!.</p>
-             <br><br><br>
-            <p class="parrafo_dos">En nuestra tienda encontrarás una gran variedad de comida para perros y otros productos para atender 
-                las necesidades de tu perro: pienso, comida húmeda, snacks, complementos alimenticios, transportines para perros, correas, camas, casetas 
-                y demás accesorios para perros ¡a los mejores precios!.</p>
-            </div>
-        </div>
-      </div>
-    </section>
+ <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/pexels-tom-fisk-1125979.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/pexels-artem-mizyuk-640x480.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/pexels-peces-ungaro-3854025.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <section class="lo_mas_vendido">
-  <div class="productos">
+  <div class="titulo">
     <h2 class="text-center">Productos Mas Vendidos</h2>
   </div> 
-   <img src="../img/peceradownload-1.jpg" class="rounded float-start" alt="...">
-    <img src="../img/ofertasdownload-3.jpg" class="rounded float-end" alt="...">
-    <img src="../img/pcesdownload.jpg"" class="rounded mx-auto d-block" alt="...">
- 
-</section>
-<br><br>
-  <h2 class="text-center">Con Muchas Ofertas</h2>
-
-  <img src="../img/ofertasdownload-3.jpg"" class="rounded mx-auto d-block" alt="...">
+  
+  <h3>Tienda para peces: comida y accesorios</h3>
+<p>La tienda para peces de FamilyPets te ofrece una gran selección de acuarios, accesorios y alimentos para peces. Aquí encontrarás todo lo que necesitas para tu acuario o estanque, incluyendo los filtros de acuarios y bombas de agua de Eheim o Juwel. ¡Ahorra más para tus peces!</p>
+<div class="row">
+ <div class="col-sm">
+   <div class="card" style="width: 14rem;">
+    <h5 class="card-title">Purifica Su Agua</h5>
+     <img src="../img/card-peces.jpg" class="card-img-top" alt="...">
+     <div class="card-body">
+       <p class="card-text">Para mejorar su habitat tenemos estos productos.</p>
+       <a href="../Listas/ofertas.html" class="btn btn-warning">Todos Los Productos</a>
+     </div>  
+    </div>
+  </div>
+   <div class="col-sm">
+     <div class="card" style="width: 14rem;">
+      <h5 class="card-title">Alimento Para Peces</h5>
+        <img src="../img/card-peces2.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+          <p class="card-text">Los mejores alimentos lo encuentras aquí.</p>
+          <a href="../Listas/ofertas.html" class="btn btn-warning">Todos Los Productos</a>
+       </div>
+     </div> 
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 14rem;">
+        <h5 class="card-title">Marcas</h5>
+        <img src="../img/card-peces-marcas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Las mejores selecciones de marcas para los peces.</p>
+          <a href="../Listas/ofertas.html" class="btn btn-warning">Todos Los Productos</a>
+        </div>
+      </div> 
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: 14rem;">
+        <h5 class="card-title">Todo Para Tortugas</h5>
+        <img src="../img/tortugas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Los mejores productos para tortugas.</p>
+          <a href="../Listas/ofertas.html" class="btn btn-warning">Todos Los Productos</a>
+        </div>
+      </div> 
+    </div>
+</div> 
+ <div class="titulo">
+   <h2 class="text-center">Con Muchas Ofertas</h2>
+ </div>
+<img src="../img/ofertasdownload-3.jpg"" class="rounded mx-auto d-block" alt="...">
 </main>
 <footer>
   <select class="form-select" aria-label="Default select example">
@@ -77,5 +123,6 @@
     <option value="3">No</option>
   </select>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
