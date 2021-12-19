@@ -1,1 +1,83 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.navbar-light.navbar-nav {
+  color: #FF7A00;
+  margin: 0px 20px;
+  padding-left: 40px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+}
+
+.nav-link {
+  color: #FF7A00;
+  margin: 0px 20px;
+  padding-left: 40px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+}
+
+.nav-link .nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.titulo {
+  background-color: #FF0036;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: xx-large;
+  min-width: 100%;
+}
+
+.uno__img-derecha {
+  margin-left: 50px;
+}
+
+.parrafo {
+  font-family: 'Outfit', sans-serif;
+}
+
+.parrafo__uno {
+  text-align: justify;
+  font-family: 'Outfit', sans-serif;
+}
+
+.vendidos {
+  width: 100%;
+}
+
+.sub__titulo {
+  text-align: center;
+}
+
+.main__oferta {
+  margin: auto;
+  margin-top: 20%;
+  background-color: #FF0036;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  border-radius: 80%;
+}
+
+.main__oferta__titulo {
+  color: white;
+}
+
+.card-title {
+  background-color: #FF0036;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
