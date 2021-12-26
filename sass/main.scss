@@ -7,32 +7,30 @@
     width: 200px;
     
 }
-.navbar-light.navbar-nav {
+.navbar-light {
     color: #FF7A00;
     margin: 0px 20px;
    padding-left: 40px;
    font-family: 'Outfit', sans-serif;
    font-weight: 800;
+}   
+.navbar-nav {
+   @extend .navbar-light;
 }
 .nav-link {
-    color: #FF7A00;
-    margin: 0px 20px;
-   padding-left: 40px;
-   font-family: 'Outfit', sans-serif;
-   font-weight: 800;
-   .nav-link {
+    @extend .navbar-light;
+}
+   .nav-link{
     display: block;
     padding: .5rem 1rem;
     text-decoration: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+.container__oferta{
+     height: 250px;
 }
-.titulo{
-    background-color:  #FF0036;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: xx-large;
-    min-width: 100%;
+.contaniner__fluid{
+    box-sizing: border-box;
 }
 .uno__img-derecha{
     margin-left: 50px;
@@ -63,7 +61,25 @@
         color: white;
     }
 }
+@mixin red-center{
+    background-color:red;
+    text-align:center;
+}
+   
 .card-title{
-    background-color:#FF0036;
-    text-align: center;
+    @include red-center;
+}
+$style:(
+    color:  #FF0036,
+    centrar: center,
+    tletra: 'Playfair Display',
+    fletra: xx-large,
+    ancho: 100%,
+);
+.titulo{
+    background-color: map-get($style,color);
+    text-align: map-get($style,centrar);
+    font-family: map-get($style,tletra);
+    font-size: map-get($style,fletra);
+    width: map-get($style,ancho);
 }
