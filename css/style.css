@@ -18,39 +18,94 @@ font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
  .header__logo {
-    width: 200px;
+    width: 300px;
     
 }
-.navbar-light .navbar-nav .nav-link {
-    color:#FF7A00;
-    margin: 0px 20px;
-   padding-left: 40px;
-   font-family: 'Outfit', sans-serif;
+.navbar-nav{
+    color: white;
+   margin: auto;
+}
+.nav-link{
+    color:white;
+    font-family: 'Outfit', sans-serif;
    font-weight: 800;
+   font-size: large;
 }
-.nav-link {
-    display: block;
-    padding: .5rem 1rem;
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-
+.nav-item{
+    padding: 0px 30px;
 }
-.titulo{
-    background-color:  #FF0036;
-    text-align: center;
-    font-family: 'Playfair Display';
-    font-size: xx-large;
-    width: 100%;
+.navbar-light .navbar-nav .nav-link {
+    color:white;
 }
+.nav-item:hover{
+    background-color: hsla(0,0%,100%,.3);
+    font-weight: bold;
+}
+.main__background{
+    background-color: #00BE00;
+    max-width: 100%;
+}
+.clearfix{
+  padding: 30px 10px 20px 30px;
+ }
+ .titulo__principal{
+    font-family: 'Playfair Display', serif;
+ }
 .titulo__vendidos{
-    background-color:  #FF0036;
-    text-align: center;
+    margin: 30px 10px 20px 30px;
     font-family: 'Playfair Display', serif;
     font-size: xx-large;
     width: 100%;
     height: 40px;
 }
-.uno__img-izquierda{
+.carousel{
+  width: 400px;
+  overflow: hidden;
+}
+.carousel-inner{
+   height: auto;
+   overflow: hidden;
+}
+.container__img{
+   max-width: 100%;
+  margin: 0px 70px 15px;
+}
+.col{
+    display: grid;
+}
+.titulo__descripcion{
+    padding: 30px 50px;
+    font-family: 'Playfair Display', serif;
+}
+.enlace__descripcion{
+   text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Outfit', sans-serif;
+}
+.enlace__descripcion:hover{
+    color: #00BE00;
+}
+.titulo{
+    margin-top: 15px;
+    width: 100%;
+}
+.titulo__final{
+    margin: 50px 15px 10px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    display: flex;
+}
+.card-title{
+    background-color:  #00BE00;
+    text-align: center;
+    color: white;
+    font-family:'Playfair Display', serif;
+
+}
+/*.uno__img-izquierda{
     margin-left: 50px;
 }
 .uno__img-derecha{
@@ -105,12 +160,9 @@ font-family: 'Playfair Display', serif;
 .main__titulo{
     color: white;
 }
-.card-title{
-    background-color:#FF0036;
-    text-align: center;
-}
 
-@media only screen and (max-width:768px) {
+
+/*@media only screen and (max-width:768px) {
   .header, .contenedor__carousel,.titulo, .titulo__pez, .form-select{width:100%;} 
   .parrafo__peces, .row{margin-right: 150px;}
   
@@ -124,4 +176,4 @@ font-family: 'Playfair Display', serif;
 @media only screen and (max-width:320px) {
    .parrafo__peces{text-align:initial;}
     .row{margin-left: 45px;}
-}
+}*/
