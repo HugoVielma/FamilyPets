@@ -178,24 +178,9 @@ p{
     text-align: center;
 }
 /*Ofertas*/
-.main__contenedor{
-    background-image: url("../img/accesorios-para-perros-set-productos-mascotas-alimentos-rayar-poste-de-juguetes-peine-tratar-el-estilo-dibujos-animados-vector-192874239.jpg");
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main__oferta{
-    margin: auto;
-    background-color: #00BE00;
-    margin-top: 200px;
-    padding: 40px;
-    width: 300px;
+.titulo__principal-centro{
+    font-family:'Playfair Display', serif;
     text-align: center;
-    border-radius: 80%;
-}
-.main__titulo{
-    color: white;
-    padding-top: 50%;
 }
 
 
@@ -204,7 +189,7 @@ p{
       .container__imag-derecha{margin: 0px 80px;}
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:768px) {
    .img__derecha{width: 60px;}
    .container__imag-derecha{margin: 0px 50px}
    .img__izquierda{width: 80px;}
