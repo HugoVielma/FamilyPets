@@ -196,8 +196,11 @@ p{
    .container__imag{margin: 0px 50px;}
    .header.main__background{width: 100%;}
 }
-/*
+@media only screen and (max-width:375px){
+    .container__imag-derecha{margin:auto}
+    .container__imag{margin: auto;}
+}
 @media only screen and (max-width:320px) {
-   .parrafo__peces{text-align:initial;}
-    .row{margin-left: 45px;}
-}*/
+  .container__imag{margin:auto;}
+  .container__imag-derecha{margin:auto;}
+}
